@@ -1,2 +1,0 @@
-# -wechat-app
-wechat-app
