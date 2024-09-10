@@ -1,0 +1,103 @@
+<!--pages/home/home.wxml-->
+
+<!-- <image src="/images/123.jpg" style="width: 750rpx; height: 872rpx; display: inline-block; box-sizing: border-box"></image> -->
+
+<!-- <swiper indicator-dots indicator-color="white" autoplay interval="6000">
+<swiper-item class="swiper">
+<image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw%2F19db883c-6d7c-4f3a-be32-90d40db249ba%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1680959448&t=d09b0a580ceb7c5051c7effc6ec48ea7" mode="widthFix"></image>
+</swiper-item>
+
+<swiper-item class="swiper">
+    <image src="https://www.qmbk.com/jingyan/UploadFiles_2374/201912/2019120415264989.jpg" mode="widthFix"></image>
+</swiper-item>
+
+<swiper-item class="swiper">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F9677497%2F4d9c8a0e1d4fe8407698533657adddfa.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvOTY3NzQ5Ny80ZDljOGEwZTFkNGZlODQwNzY5ODUzMzY1N2FkZGRmYS5qcGc%3D%2Fsign%2F9e74cc163c25043f3d011bd125ee1683.jpg&refer=http%3A%2F%2Fss2.meipian.me&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1680959557&t=78c3399a3609ac7aac10c773da15f8f1" mode="widthFix"></image>
+</swiper-item>
+</swiper> -->
+
+<image src="/images/123.png" style="width: 750rpx; height: 244rpx; display: inline-block; box-sizing: border-box"></image> 
+
+<view class="notice" style="position: absolute; left: 26rpx; top: 312rpx">
+  <image src="/images/horn.png" mode="widthFix"></image>
+  <view class="notice_desc">
+    <view style="transform: translateX(-{{ distance }}px);">
+      <text style="margin-right:{{ space }}px;"></text>
+      <text id="mjltest">{{ text }}</text>
+      <text style="margin-right:{{ space }}px;"></text>
+      <text>{{ text }}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="b" style="position: relative; left: -25rpx; top: 71rpx; width: 690rpx; height: 279rpx; display: block; box-sizing: border-box">
+<text class="t">☆学习交流栏</text>
+<view class="divLineX"   style="position: relative; left: 0rpx; top: -25rpx"></view>
+
+<image class="resource"  bindtap="toshare"   src="/images/text.png" style="position: relative; left: 6rpx; top: 0rpx"></image>
+<image class="resource" bindtap="button" src="/images/checkbox.png" style="position: relative; left: 99rpx; top: 0rpx"></image>
+<image class="resource" bindtap="tostudy"  src="/images/study.png" style="position: relative; left: 181rpx; top: 12rpx"></image>
+
+<text class="c"  style="position: relative; left: -463rpx; top: 50rpx">迷你树洞</text>
+<text class="c"  style="position: relative; left: 93rpx; top: 2rpx">每日事项</text>
+<text class="c"  style="position: relative; left: 114rpx; top: 2rpx">寻找搭档</text>
+</view>
+
+
+
+
+
+
+
+<view class="b" style="position: relative; left: -22rpx; top: 52rpx; width: 690rpx; height: 279rpx; display: block; box-sizing: border-box">
+<text class="t">☆考研专栏</text>
+<view class="divLineX"   style="position: relative; left: 0rpx; top: -25rpx"></view>
+
+<image class="resource" bindtap="2" src="/images/2.png" style="position: relative; left: 6rpx; top: 0rpx"></image>
+<image class="resource" bindtap="3" src="/images/3.png" style="position: relative; left: 99rpx; top: 0rpx"></image>
+<image class="resource" bindtap="4" src="/images/4.png" style="position: relative; left: 181rpx; top: 12rpx"></image>
+
+<text class="c"  style="position: relative; left: -463rpx; top: 50rpx">考研政治</text>
+<text class="c"  style="position: relative; left: 93rpx; top: 2rpx">考研数学</text>
+<text class="c"  style="position: relative; left: 114rpx; top: 2rpx">考研英语</text>
+</view>
+
+
+<view class="b"  style="position: relative; left: -19rpx; top: 40rpx; width: 690rpx; height: 244rpx; display: block; box-sizing: border-box">
+<text class="t">☆教资四六级专栏</text>
+<view class="divLineX"   style="position: relative; left: 0rpx; top: -25rpx"></view>
+<image  class="resource" bindtap="1" src="/images/1.png" style="position: relative; left: 56rpx; top: -15rpx; width: 211rpx; height: 150rpx; display: inline-block; box-sizing: border-box"></image>
+<image class="resource" bindtap="5" src="/images/5.png" style="position: relative; left: 181rpx; top: -43rpx; width: 174rpx; height: 106rpx; display: inline-block; box-sizing: border-box"></image>
+
+<text class="c"  style="position: relative; left: -306rpx; top: 0rpx">四六级</text>
+<text class="c"  style="position: relative; left: -132rpx; top: 0rpx">教资</text>
+
+</view>
+
+
+
+
+
+<!-- <view class="e" style="position: relative; left: -19rpx; top: 68rpx; width: 690rpx; height: 279rpx; display: block; box-sizing: border-box">
+    <text class="t" style="width: 699rpx; height: 94rpx; display: flex; box-sizing: border-box">☆学习交流栏</text>
+<image bindtap="toshare"   src="/images/text.png" style="position: relative; left: 5rpx; top: -47rpx; width: 120rpx; height: 120rpx; display: inline-block; box-sizing: border-box"></image>
+<image src="/images/checkbox.png" class="button" bindtap="button" style="width: 120rpx; height: 120rpx; display: inline-block; box-sizing: border-box; position: relative; left: 93rpx; top: -47rpx">每日计划</image> 
+<image bindtap="tostudy"  src="/images/study.png" style="position: relative; left: 179rpx; top: -47rpx; width: 120rpx; height: 120rpx; display: inline-block; box-sizing: border-box"></image>
+<text style="position: relative; left: -420rpx; top: -8rpx">迷你树洞</text>
+<text  style="position: relative; left: -293rpx; top: -8rpx">每日计划</text>
+ </view>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+

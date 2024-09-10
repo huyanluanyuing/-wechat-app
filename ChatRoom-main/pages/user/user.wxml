@@ -1,0 +1,16 @@
+
+<image class="bg" src="http://5b0988e595225.cdn.sohucs.com/images/20200212/e496d538ba7442c0b9465f58062f770a.jpeg"></image>
+<image class="circleImage" src="{{avatarUrl}}" style="position: relative; left: 5rpx; top: -68rpx"></image>
+
+<view class="label-list" style="position: relative; left: 0rpx; top: -78rpx">
+    <view class="label">微信名:</view>
+    <view class="label">{{userInfo.nickName}}</view>
+</view>
+<view class="label-list" style="position: relative; left: 0rpx; top: -78rpx">
+    <text class="label" space="emsp"> 账号:</text>
+    <view class="label">{{userInfo.account_id}}</view>
+</view>
+
+<button bindtap="changeUserAvatar" class="buttonType1" style="position: relative; left: 0rpx; top: -79rpx">修改头像</button>
+<button bindtap="changeUser" class="buttonType2" style="position: relative; left: 0rpx; top: -59rpx">切换用户/注册</button>
+<button class="checkbox" bindtap="checkbox">每日计划</button>

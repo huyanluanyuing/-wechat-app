@@ -1,0 +1,21 @@
+<!--pages/checkbox/checkbox.wxml-->
+<image src="/images/checkbox2.jpg" style="width: 750rpx; height: 338rpx; display: inline-block; box-sizing: border-box"></image>
+<block wx:if="{{i==0}}">
+<text>目标一</text><input type="text" class="text" name="text1" bindinput="text1"/>
+<text>目标二</text><input type="text" class="text" name="text2" bindinput="text2" />
+<text>目标三</text><input type="text" class="text" name="text3" bindinput="text3"/>
+<button bindtap="button" class="submit">提交目标</button>
+</block>
+
+<block wx:if="{{i==1}}">
+<checkbox-group class="total" bindchange="change">
+<checkbox class="show" checked="{{check1}}" value="1" ><view class="txt" >{{text1}}</view></checkbox>
+<text>\n</text>
+<checkbox class="show" checked="{{check2}}" value="2"><view class="txt" >{{text2}}</view></checkbox>
+<text>\n</text>
+<checkbox class="show" checked="{{check3}}" value="3"><view class="txt" >{{text3}}</view></checkbox>
+</checkbox-group> 
+<button bindtap="reset" class="reset" style="text-align: center;" >修改目标</button>
+</block>
+
+

@@ -1,0 +1,74 @@
+page{
+    background-color: rgba(241, 241, 241, 0.945);
+}
+.input{
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 7px;
+}
+.input-style{
+    width: 90%;
+    height: 50px;
+    border: 10px solid rgb(175, 22, 22);
+    margin: 10px auto;
+}
+.btn{
+    width: 300px;
+    margin: 10px auto;
+    background-color:#58759c;
+}
+.submit{
+    color: rgb(255, 255, 255);
+    font-weight:normal;
+}
+.headimg{
+    width:45px;
+    height: 45px;
+    
+}
+.nickname_liuyantext{
+    width: 350px;
+    float: right;
+}
+.nickname_liuyantext .nickname{
+    font-size: 15px;
+    color: #999;
+}
+.nickname_liuyantext .nickname .time{
+    font-size: 11px;
+    color: #999;
+     float: right;
+}
+.nickname_liuyantext .text{
+    font-size: 20px;
+    float: left;
+    color:rgb(71, 71, 71);
+}
+.zan{
+    color:rgb(71, 71, 71);
+}
+.box{
+    height:121px;
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-image: url(https://picnew13.photophoto.cn/20190114/qingxinjianyuetianqibiankuangbeijing-32359216_1.jpg);
+    background-size:100% 125px;
+}
+
+.like{
+width: 5px;
+}
+
+.divLineX{
+    background: #E4E6ED;
+    width: 100%;
+    height: 1rpx;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    position:fixed
+}

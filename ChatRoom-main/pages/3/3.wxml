@@ -1,0 +1,9 @@
+<view>
+  <image class="bg-img" mode="scaleToFill" src="https://picnew12.photophoto.cn/20180528/xiazhihuashuzhongguofenghaibaobeijing-32861577_1.jpg"></image>
+</view>
+<view class="section">
+  <text>链接地址:\n</text>
+  <text class="textpart" user-select="{{true}}">pan.baidu.com/s/1I5pzlEtelPsoOtHopIlCzw?pwd=91wg</text>
+  <text>\n提取码:\n</text>
+  <text>91wg</text>
+</view>

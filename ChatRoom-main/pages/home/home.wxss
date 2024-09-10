@@ -1,0 +1,112 @@
+/* pages/home/home.wxss */
+page{
+    background-color: rgba(159, 199, 218, 0.945);
+    /* background-image: url("http://cdn.u1.huluxia.com/g4/M02/7D/40/rBAAdmQ9OASAOu76AADHkX3MVNQ287.jpg"); */
+    
+}
+.divLineX{
+    background: #E4E6ED;
+    width: 75%;
+    height: 1rpx;
+}
+.b{
+    
+    height: 280rpx;
+    background-color: rgb(255, 255, 255);
+    border-radius: 45rpx;
+    margin-top: 95rpx;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    text-align: center;
+    
+}
+
+.swiper{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 30rpx; 
+}
+.resource{ 
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-left: 25rpx;
+    padding-right: 25rpx;
+}
+.option{
+
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 200rpx;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+
+}
+.t{
+    height: 80rpx;
+    width: 700rpx;
+   display: flex;
+   margin-right: 5px;
+   margin-left: 5px;
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+   font-weight:bolder
+   
+}
+.c{
+    font-size: 36rpx;
+    
+    color: rgb(105, 105, 105);
+    padding-left: 16px;
+    padding-right: 20rpx;
+    flex-direction: row;
+}
+
+.d{ 
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-right: 5px;
+    margin-right: 5px;
+}
+
+.e{
+    height: 320rpx;
+    background-color: rgb(255, 255, 255);
+    border-radius: 45rpx;
+    margin-top: 55rpx;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    text-align: center;
+    padding-left: 0rpx;
+    padding-right: 36rpx;
+}
+
+.notice {
+    width: 92%;
+    height: 56rpx;
+    line-height: 56rpx;
+    background-color: rgb(218, 218, 218);
+    box-shadow: 0 3rpx 6rpx 1rpx rgba(173, 173, 173, 0.41);
+    border-radius: 30rpx;
+    position: absolute;
+    top: 350rpx;
+    left: 30rpx;
+    display: flex;
+}
+
+.notice image {
+    width: 36%;
+    margin: 10rpx 18rpx;
+}
+
+.notice .notice_desc {
+    margin-right: 40rpx;
+    font-size: 28rpx;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+}

@@ -1,0 +1,78 @@
+<view class="index">
+<image class="bg" src="http://cdn.u1.huluxia.com/g4/M00/80/D1/rBAAdmRDzG-ARfmPAAduquEGEAo395.jpg" style="position: fixed; left: 0rpx; top: -15rpx; width: 750rpx; height: 1355rpx; display: block; box-sizing: border-box"></image>
+</view>
+<!-- <view>
+  <image class="bg-img" mode="scaleToFill" src="https://pic.616pic.com/bg_w1180/00/14/57/1357jOZGBh.jpg"></image>
+</view> -->
+<view class="label">新朋友</view>
+<block wx:if="{{i==true}}">
+<block wx:for="{{new_friends}}">
+    <view class="user-list">
+    <view class="left">
+        <image class="face" src="{{item.userA_avatarUrl}}"></image>    
+        <view class="nick-name">{{item.userA_account_id}}</view>
+    </view>
+    <view class="right">
+    <button class="add1" size="mini" bindtap="acceptNewFriend" data-index="{{index}}"><text class="font">同意</text></button>
+</view>
+</view>
+
+
+</block>
+</block>
+<view class="label">我的好友</view>
+<block wx:for="{{my_friends}}">
+<view class="user-list">
+
+    <block wx:if="{{item.userA_id==userInfo._id}}">
+    <view class="left" bindtap="startChat" data-index="{{index}}">
+
+        <image class="face" src="{{item.userB_avatarUrl}}"></image>    
+        <view class="nick-name">{{item.userB_account_id}}</view>
+    </view>
+    </block>
+
+    <block wx:if="{{item.userB_id==userInfo._id}}">
+    <view class="left" bindtap="startChat" data-index="{{index}}">
+
+        <image class="face" src="{{item.userA_avatarUrl}}"></image>    
+        <view class="nick-name">{{item.userA_account_id}}</view>
+    </view>
+    </block>
+
+</view>
+</block>
+
+
+<view class="label"><text>其他用户</text></view>
+<block wx:if="{{i==true}}">
+<block wx:for="{{user_list}}">
+<view class="user-list">
+
+    <view class="left">
+
+    <block wx:if="{{item._id != new_accepted_friend_id}}">
+
+        <image class="face" src="{{item.avatarUrl}}"></image>    
+        <view class="nick-name">{{item.account_id}}</view>
+
+    </block>
+    </view>
+    <view class="right">
+    
+    
+    <button class="add" size="mini" bindtap="addFriend" data-index="{{index}}"><text class="font">添加好友</text></button>
+    
+    
+    </view>
+
+</view>
+</block>
+</block>
+
+<block wx:if="{{i==true}}">
+<button bindtap="hide" class="hide" style="width: 237rpx; height: 54rpx; display: block; box-sizing: border-box; left: 257rpx; top: -933rpx; position: relative"><text class="font">{{a}}</text></button>
+</block>
+<block wx:if="{{i==false}}">
+<button bindtap="hide" class="hide" style="width: 237rpx; height: 54rpx; display: block; box-sizing: border-box; left: 238rpx; top: -350rpx; position: relative"><text class="font">{{b}}</text></button>
+</block>

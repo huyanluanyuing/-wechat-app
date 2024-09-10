@@ -1,0 +1,69 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/login/login",
+        "pages/user/user",
+        "pages/message/message",
+        "pages/friends/friends",
+        "pages/chat/chat",
+        "pages/register/register",
+        "pages/1/1",
+        "pages/2/2",
+        "pages/3/3",
+        "pages/4/4",
+        "pages/share/share",
+        "pages/contact/contact",
+        "pages/study/study",
+        "pages/checkbox/checkbox",
+        "pages/5/5",
+        "pages/partner/partner"
+
+        
+    ],
+    "permissions": {
+        "openapi": [
+          "security.msgSecCheck"
+        ]
+      },
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#58759c",
+        "navigationBarTitleText": "海带互督室",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh":true,
+        "backgroundColorBottom":"#58759c"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#9c9d9b",
+        "backgroundColor": "#58759c",
+        "selectedColor": "#0A44DF",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "主页",
+                "iconPath": "images/tabBar/home.png",
+                "selectedIconPath": "images/tabBar/home.png"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "text": "消息",
+                "iconPath": "images/message1.png",
+                "selectedIconPath": "images/message1.png"
+            },
+            {
+                "pagePath": "pages/friends/friends",
+                "text": "联系人",
+                "iconPath": "images/people.png",
+                "selectedIconPath": "images/people.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人中心",
+                "iconPath": "images/tabBar/user.png",
+                "selectedIconPath": "images/tabBar/user.png"
+            }
+        ]
+    }
+}

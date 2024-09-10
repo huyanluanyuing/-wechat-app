@@ -1,0 +1,32 @@
+<view>
+  <image class="bg-img" mode="scaleToFill" src="http://cdn.u1.huluxia.com/g4/M01/80/D0/rBAAdmRDyxeANJHVAABAsWymJgg01.jpeg"></image>
+</view>
+
+<image src="/images/stress.png" style="width: 750rpx; height: 303rpx; display: inline-block; box-sizing: border-box"></image>
+
+<form bindsubmit="formSubmit" style="position: relative; left: 0rpx; top: 78rpx; width: 746rpx; height: 94rpx; display: inline; box-sizing: content-box">
+<view class="input">
+<textarea style="width: 694rpx; height: 94rpx; display: block; box-sizing: border-box; left: 26rpx; top: 0rpx; position: relative" class="input-sytle" name="liuyantext" placeholder="这里是树洞，尽情分享吧！"/>
+</view>
+<button  form-type="submit" class="btn" style="position: relative; left: 0rpx; top: 59rpx"><text class="submit">确认</text></button>
+</form>
+
+<view style="text-align: center; font-size: 18px; color: rgb(158, 158, 158); margin-top: 20px; position: relative; left: 0rpx; top: 118rpx">内容</view>
+<view style="text-align: center; font-size: 15px; color: rgb(158, 158, 158); margin-top: 20px; position: relative; left: 0rpx; top: -169rpx">下拉刷新仅展示最新的20条</view>
+<view style="width:100%; height:10px"></view>
+
+<view wx:for="{{dataObj}}" wx:key="dataObj"  style="width: 750rpx; height: 497rpx; display: block; box-sizing: border-box"><!--循环建立留言框-->
+<view class="box">
+<view class="nickname_liuyantext" contenteditable="true"><!--设置为可写入-->
+<view class="nickname">{{item.random}}<view class="time">{{item.time}}</view>
+</view><!--用户昵称，时间-->
+<view class="text">{{item.content}}</view><!--留言板内容-->
+</view>
+</view>
+
+<image src="/images/like.png" catchtap="like" data-id="{{item._id}}" style="width: 68rpx; height: 68rpx; display: inline-block; box-sizing: border-box; position: relative; left: 650rpx; top: -110rpx"></image>
+<view style="position: relative; left: 29rpx; top: -127rpx"><text class="zan">{{item.like}}赞</text></view>
+<!-- <view class="divLineX"  style="position: relative; left: 0rpx; top: -71rpx"></view> -->
+</view>
+
+

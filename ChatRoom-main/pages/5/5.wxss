@@ -1,0 +1,15 @@
+/* pages/5/5.wxss */.bg-img{
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    position:fixed
+}
+.textpart{
+    word-wrap: black-word;
+    word-break: break-all;
+    white-space: pre-line;
+}
+.section{
+    border-radius: 12px;
+    padding: 10% 10%;
+}
